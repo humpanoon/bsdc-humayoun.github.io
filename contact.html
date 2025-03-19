@@ -17,8 +17,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="alphabet.html">Alphabet</a></li>
-                <li><a href="services.html">services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -27,4 +27,39 @@
         <h2>Contact Us</h2>
         <p>If you have any questions or need support with your BSL learning journey, feel free to get in touch with us.</p>
 
-        <form
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Your message here" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submitBtn">Send Message</button>
+            </div>
+        </form>
+
+        <div class="contact-info">
+            <h3>Our Office</h3>
+            <p><strong>Location:</strong> 123 BSL Street, Learning City, ABC 456</p>
+            <p><strong>Email:</strong> contact@edusign.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EDUSIGN. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
