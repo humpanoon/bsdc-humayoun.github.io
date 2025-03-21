@@ -57,13 +57,21 @@ header nav ul li a:hover {
 .hero {
     background-color: #1e2a47; /* Dark Blue */
     color: white;
-    padding: 60px 20px;
+    padding: 60px 90px;
     text-align: center;
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Larger font size */
     margin-bottom: 20px;
+    animation: slideUp 1s ease-out; /* Slide-up animation */
+}
+
+.hero p {
+    font-size: 1.6rem; /* Adjust the font size for better readability */
+    margin-bottom: 30px; /* Adds space below the paragraph */
+    animation: fadeIn 1s ease-out 0.3s; /* Fade-in effect with delay */
 }
 
 .hero .cta-btn {
@@ -73,6 +81,8 @@ header nav ul li a:hover {
     color: white;
     font-size: 1.2rem;
     transition: background-color 0.3s;
+    margin-top: 20px; /* Increased top margin to give space between buttons */
+    animation: fadeIn 1s ease-out 0.6s; /* Button fade-in with delay */
 }
 
 .hero .cta-btn:hover {
@@ -84,6 +94,7 @@ section {
     padding: 50px 20px;
     text-align: center;
     background-color: #ffffff; /* White background for sections */
+    animation: fadeIn 1s ease-out 0.8s;
 }
 
 h2 {
@@ -95,6 +106,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 30px;
+    animation: slideUp 1s ease-out;
 }
 
 .card {
@@ -103,6 +115,7 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 280px;
+    animation: fadeIn 1s ease-out;
 }
 
 .card h3 {
@@ -110,12 +123,14 @@ h2 {
     margin-bottom: 15px;
 }
 
+/* Footer Styling */
 footer {
     background-color: #333; /* Dark footer */
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    animation: fadeIn 1s ease-out 1s;
 }
 
 footer a {
@@ -146,6 +161,7 @@ footer a {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    animation: fadeIn 1s ease-out;
 }
 
 .letter h3 {
@@ -184,6 +200,7 @@ footer a {
     max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out 1.2s;
 }
 
 .contact-section h2 {
@@ -268,5 +285,26 @@ footer a {
 
     .form-group input, .form-group textarea, .form-group button {
         font-size: 16px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
